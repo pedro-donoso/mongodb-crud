@@ -24,3 +24,5 @@ router.post("/tasks/:id/edit", editTask);
 router.get("/tasks/:id/delete", deleteTask);
 
 export default router;
+
+//rutas
