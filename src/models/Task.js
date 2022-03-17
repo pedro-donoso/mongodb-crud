@@ -1,5 +1,4 @@
 import { Schema, model } from 'mongoose';
-
 const taskSchema = new Schema({
     title: {
         type: String,
@@ -19,7 +18,6 @@ const taskSchema = new Schema({
     timestamps: true,
     versionKey: false
 });
-
 export default model('Task', taskSchema);
 
 
