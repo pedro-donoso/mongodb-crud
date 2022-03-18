@@ -1,18 +1,16 @@
 <div class="container">
   <div class="row">
-    <!--FORM-->
     <div class="col-md-5 offset-md-3">
       <div class="card">
         <div class="card-body">
-          <h1>Update Task</h1>
-
+          <h4>Actualizar Tarea</h4>
           <form action="/tasks/{{task._id}}/edit" method="post">
             <div class="mb-3">
               <input
                 class="form-control"
                 type="text"
                 name="title"
-                placeholder="Title"
+                placeholder="Editar Título"
                 value="{{task.title}}"
               />
             </div>
@@ -21,10 +19,10 @@
                 class="form-control"
                 name="description"
                 rows="3"
-                placeholder="Add a Description"
+                placeholder="Editar Descripción"
               >{{task.description}}</textarea>
             </div>
-            <button class="btn btn-primary" type="submit">Update</button>
+            <button class="btn btn-warning" type="submit">Actualizar</button>
           </form>
         </div>
       </div>
